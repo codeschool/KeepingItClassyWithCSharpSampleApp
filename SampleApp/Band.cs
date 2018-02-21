@@ -18,7 +18,6 @@ public class Band
 
     public void AddMusician()
     {
-        var thing = new Musician(){Name="Bob",Insturment="Drums"};
         var musician = new Musician();
         Console.WriteLine("What is the name of the musician to be added?");
         musician.Name = Console.ReadLine();
