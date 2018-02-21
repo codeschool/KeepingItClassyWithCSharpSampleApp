@@ -13,7 +13,8 @@ class Program
         Console.WriteLine("Type 'Announce' to announce the band.");
         Console.WriteLine("Type 'Quit' to quit the application.");
 
-        while (true)
+        var repeat = true;
+        while (repeat)
         {
             Console.WriteLine("Add, Announce, or Quit?");
             var action = Console.ReadLine();
@@ -27,7 +28,7 @@ class Program
             else if (action == "Announce")
                 band.Announce();
             else if (action == "Quit")
-                break;
+                repeat = false;
             else
                 Console.WriteLine(action + " is not a valid command.");
         }
